@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Autobiography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    Welcome to my personal portfolio and autobiography website!
+  </div>
+
+  <header class="navbar">
+    <div class="container navbar-container">
+      <div class="logo-container">
+        <h3 class="brand-font" style="color: var(--dusty-rose); font-size: 2.2rem;">My Portfolio</h3>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#products">Journey</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+              <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="floating-sticker">
+    <img src="images/blossom.gif" alt="Blossom Sticker">
+  </div>
+
+  <main>
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <span class="hero-badge">Personal Portfolio</span>
+        <h1 class="animated-hero-text">Hello, I am Audrey Gail Cruz</h1>
+        <p>A third-year BSIT student specializing in Web and Mobile Application Development, passionate about design, coding, and continuous learning.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-rose">Explore Projects</a>
+          <a href="#about" class="btn btn-sage">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-modern-wrapper">
+          <div class="about-main-content">
+            <span class="badge-sub">PROFILE & PASSION</span>
+            <h2>About <span class="brand-font" style="color: var(--dusty-rose);">Me</span></h2>
+            <p class="lead-text">
+              Hi, I'm Audrey Gail! I am a third-year BSIT student specializing in Web and Mobile Application Development, driven by a deep passion for bringing creative digital ideas to life.
+            </p>
+            <p>
+              Through hands-on projects and teamwork, my academic journey has given me the opportunity to dive deep into various programming languages, frameworks, and modern tools.
+            </p>
+            <p>
+              I build practical websites and applications using HTML, CSS, and Java, while continuously expanding my stack with React, PHP, MySQL, and mobile development technologies. For me, every project is a fresh chance to sharpen my problem-solving skills and turn concepts into functional code.
+            </p>
+          </div>
+
+          <div class="about-skills-sidebar">
+            <h3>Core Technical Stack</h3>
+            <div class="skills-flex-wrap">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React JS</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Firebase</span>
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Dart</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section services-section">
+      <div class="container">
+        <h2>My Focus & Interests</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="card-header header-rose"><span class="card-tag">Specialization</span></div>
+            <div class="card-body">
+              <h3>Web & Mobile Dev</h3>
+              <p>Specializing in modern web and mobile application development using Flutter, React, JavaScript, PHP, and responsive frameworks.</p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-header header-dark"><span class="card-tag tag-rose">Creative</span></div>
+            <div class="card-body">
+              <h3>Digital Design & Art</h3>
+              <p>Combining technical development skills with digital sketching, user interface styling, and aesthetic visual design projects.</p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-header header-sage"><span class="card-tag">Growth</span></div>
+            <div class="card-body">
+              <h3>Future Goals</h3>
+              <p>Aiming to expand technical expertise, build impactful software solutions, and support my family while maintaining personal well-being.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2>Academic & Development Projects</h2>
+        <div class="projects-grid">
+          
+          <div class="service-card">
+            <div class="card-header header-rose"><span class="card-tag">Enterprise System</span></div>
+            <div class="card-body">
+              <h3>LechonCity</h3>
+              <p>A web-based centralized information system with role-based access control designed to manage payroll, cash flow, inventory, and reports across multiple business operations.</p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-header header-dark"><span class="card-tag tag-rose">Web Application</span></div>
+            <div class="card-body">
+              <h3>Pet Grooming & Daycare</h3>
+              <p>A streamlined reservation system simplifying scheduling, pet profiles, interactive booking calendars, administrative dashboards, and payment verification.</p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-header header-sage"><span class="card-tag">Collection App</span></div>
+            <div class="card-body">
+              <h3>Pokémon Cards Collection</h3>
+              <p>A novelty personal card collection web application showcasing dynamic card data and custom layouts.</p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-header header-rose"><span class="card-tag">Campus Manager</span></div>
+            <div class="card-body">
+              <h3>EventHub</h3>
+              <p>An academic and campus events and opportunities manager tailored for students with user authentication and real-time form validation.</p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-header header-dark"><span class="card-tag tag-rose">Gaming Hub</span></div>
+            <div class="card-body">
+              <h3>Minecart</h3>
+              <p>A centralized web hub showcasing server info, mod lists, rules, automated player statistics, rankings, and leaderboards while protecting personal player privacy.</p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-header header-sage"><span class="card-tag">E-Commerce</span></div>
+            <div class="card-body">
+              <h3>TechDex</h3>
+              <p>An online electronics store providing tech enthusiasts with a seamless shopping experience for devices, components, and gadgets with real-time stock updates.</p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-header header-rose"><span class="card-tag">Beverage Shop</span></div>
+            <div class="card-body">
+              <h3>Lemunada</h3>
+              <p>A bright, user-friendly website showcasing a crafted lemonade menu, transparent pricing, shop branch locations, business hours, and contact details.</p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-header header-dark"><span class="card-tag tag-rose">Online Store</span></div>
+            <div class="card-body">
+              <h3>HobbyDex</h3>
+              <p>An online store supplying handmade craft kits, yarn bundles, and DIY starter packs for hobbyists.</p>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="card-header header-sage"><span class="card-tag">Cloud Database</span></div>
+            <div class="card-body">
+              <h3>Firebase Auth & RDTB</h3>
+              <p>Hands-on development projects utilizing Firebase Authentication for secure user sign-ins and Realtime Database for seamless live data synchronization.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section custom-contact-section">
+      <div class="container">
+        <div class="contact-card-wrapper">
+          <div class="contact-header-block">
+            <span class="badge-sub" style="text-align: center;">MY CONTACT INFORMATION</span>
+            <h3 class="contact-subheading">Let's start a <span class="brand-font" style="color: var(--dusty-rose);">conversation.</span></h3>
+          </div>
+
+          <div class="contact-cards-grid">
+            <div class="service-card">
+              <div class="card-header header-rose"><span class="card-tag">EMAIL ADDRESS</span></div>
+              <div class="card-body">
+                <h3>Gmail</h3>
+                <p>audreygail15@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="card-header header-dark"><span class="card-tag tag-rose">PROFESSIONAL PROFILE</span></div>
+              <div class="card-body">
+                <h3>GitHub</h3>
+                <p>Explore my code repositories & projects</p>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="card-header header-sage"><span class="card-tag">SOCIAL MEDIA</span></div>
+              <div class="card-body">
+                <h3>Facebook</h3>
+                <p>Audrey Gail Cruz</p>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="card-header header-rose"><span class="card-tag">PHONE NUMBER</span></div>
+              <div class="card-body">
+                <h3>Mobile</h3>
+                <p>+63 9394003082</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-footer-banner">
+            <p>Excited to connect, collaborate, and grow alongside fellow creators as I embark on building innovative digital solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    themeToggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
