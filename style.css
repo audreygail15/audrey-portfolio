@@ -16,6 +16,44 @@ body.dark-mode {
   --dark-text: #F0E6E8;
 }
 
+.flashlight {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body.dark-mode .flashlight {
+  opacity: 1;
+  background: radial-gradient(
+    600px circle at var(--x, 50%) var(--y, 50%),
+    rgba(184, 115, 131, 0.12),
+    transparent 80%
+  );
+}
+
+.scroll-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: transparent;
+  z-index: 9999;
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: var(--dusty-rose);
+  transition: width 0.05s ease-out;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -59,9 +97,9 @@ body {
   -moz-box-shadow: var(--cream-sand) 0 0 15px 0, var(--dusty-rose) -12px -12px 0 4px, var(--dusty-rose) 12px -12px 0 4px, var(--dusty-rose) 12px 12px 0 4px, var(--dusty-rose) -12px 12px 0 4px;
   -webkit-box-shadow: var(--cream-sand) 0 0 15px 0, var(--dusty-rose) -12px -12px 0 4px, var(--dusty-rose) 12px -12px 0 4px, var(--dusty-rose) 12px 12px 0 4px, var(--dusty-rose) -12px 12px 0 4px;
   box-shadow: var(--cream-sand) 0 0 15px 0, var(--dusty-rose) -12px -12px 0 4px, var(--dusty-rose) 12px -12px 0 4px, var(--dusty-rose) 12px 12px 0 4px, var(--dusty-rose) -12px 12px 0 4px;
-  -moz-animation: flower-loader 5s infinite ease-in-out;
-  -webkit-animation: flower-loader 5s infinite ease-in-out;
-  animation: flower-loader 5s infinite ease-in-out;
+  -moz-animation: flower-loader 12s infinite ease-in-out;
+  -webkit-animation: flower-loader 12s infinite ease-in-out;
+  animation: flower-loader 12s infinite ease-in-out;
   -moz-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
@@ -199,7 +237,15 @@ h2 {
   box-shadow: 4px 5px 17px -4px rgba(194, 142, 133, 0.5);
 }
 
-.uiverse-btn::before {
+.btn-rose:hover {
+  background-color: var(--dusty-rose);
+}
+
+.btn-sage:hover {
+  background-color: var(--muted-teal);
+}
+
+.btn-rose::before {
   content: "";
   position: absolute;
   left: -50px;
@@ -212,7 +258,24 @@ h2 {
   transition: width 1000ms;
 }
 
-.uiverse-btn:hover::before {
+.btn-rose:hover::before {
+  width: 250%;
+}
+
+.btn-sage::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #7d9194;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.btn-sage:hover::before {
   width: 250%;
 }
 
